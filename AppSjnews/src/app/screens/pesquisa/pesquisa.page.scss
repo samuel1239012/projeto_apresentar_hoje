@@ -1,0 +1,18 @@
+.dark-theme {
+ 
+    ion-item {
+      --ion-background-color: #ffffff; /* Define o fundo dos itens como verde */
+      color: #000000; /* Define a cor do texto como branco */
+    }
+   
+    ion-searchbar {
+      --background: #ffffff; /* Define o fundo da barra de pesquisa como verde */
+      --color: #000000; /* Define a cor do texto na barra de pesquisa como branco */
+      --placeholder-color: #000000; /* Define a cor do placeholder como branco */
+      --icon-color: #000000; /* Define a cor dos ícones como branco */
+    }
+  }
+  ion-content {
+    --ion-background-color: #ffffff; /* Define o fundo como branco */
+  }
+   

@@ -1,0 +1,20 @@
+
+<ion-content class="dark-theme">
+  <app-back-button></app-back-button>
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="searchNoticias()" placeholder="Pesquisar"></ion-searchbar>
+  <br>
+  
+
+    <ion-list>
+      <ion-item *ngFor="let noticias of noticia" class="news-item" (click)="getNoticia(noticias.pk_id)">
+        <ion-thumbnail slot="start">
+          <ion-img src="https://g1a.com.br/jornal/{{noticias.imagem}}"></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+           <p class="category">{{ noticias.palavra_chave }}</p> <!--trocar para generos -->
+          <h2 class="title">{{ noticias.titulo }}</h2>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+ 
+</ion-content>

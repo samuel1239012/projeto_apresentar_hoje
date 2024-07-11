@@ -1,0 +1,5 @@
+  <div class="scroll-container" #scrollContainer style="background-color: white; color: black;">
+    <button *ngFor="let button of buttons"[ngClass]="{'menu-button': true, 'active': activeButton === button.pk_id}"(click)="setActiveButton(button.pk_id)" >
+      {{ button.tipo_genero }}
+    </button>
+  </div>

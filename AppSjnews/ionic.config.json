@@ -1,0 +1,7 @@
+{
+  "name": "SJ_NEWS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

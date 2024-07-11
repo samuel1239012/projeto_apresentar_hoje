@@ -1,0 +1,34 @@
+<ion-tabs>
+ 
+  <ion-tab-bar slot="bottom">
+ 
+    <ion-tab-button tab="noticia" class="custom-tab-bar">
+      <ion-icon name="newspaper-outline"></ion-icon>
+      Noticia
+    </ion-tab-button>
+ 
+ 
+ 
+ 
+    <ion-tab-button tab="favorite">
+      <ion-icon name="bookmark-outline"></ion-icon>
+      Favoritos
+    </ion-tab-button>
+ 
+    <div class="menu-profile">
+      <!-- <ion-img (click)="openProfileModal()" [src]="'https://g1a.com.br/jornal/' + formulario.get('imagem')?.value"></ion-img> -->
+      <ion-img  (click)="openProfileModal()"src="../../../assets/img/homem-usuario.png"></ion-img>
+    </div>
+ 
+    <ion-tab-button tab="pesquisa">
+      <ion-icon name="search-outline"></ion-icon>
+      Pesquisar
+    </ion-tab-button>
+ 
+    <ion-tab-button tab="notificao">
+      <ion-icon name="notifications-outline"></ion-icon>
+      Notificação
+    </ion-tab-button>
+ 
+  </ion-tab-bar>
+</ion-tabs>

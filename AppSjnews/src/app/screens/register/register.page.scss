@@ -1,0 +1,43 @@
+ion-content {
+    --background: #BF1515;
+    
+    position: relative;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+  
+      ion-button {
+        height: 60px;
+        width: 60px;
+  
+        ion-icon {
+          font-size: 2rem;
+        }
+      }
+    }
+}
+
+
+.imagem {
+    width: 100%;
+    border-radius: 0 0 60px 60px;
+    overflow: hidden; /* Ensure the rounded corners are visible by hiding the overflow */
+  }
+  
+  ion-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit; /* Inherit border-radius from the parent .imagem */
+  }
+
+  app-formsaccount{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    margin-left: 77px;
+  }

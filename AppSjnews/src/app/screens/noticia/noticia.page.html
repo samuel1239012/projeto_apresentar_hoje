@@ -1,0 +1,71 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>noticia</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+
+
+
+
+<ion-content class="dark-theme">
+  <h1>
+    Bem vindo, {{ nome_cliente }}
+ </h1>
+  <!-- <swiper-container>
+    <swiper-slide class="dark-theme">
+      <div class="zero">
+        <div class="um">
+            <img src="../../../assets/img/dia_de_noticia.jpg" style="width: 350px; height: 225px;">
+            <h3>Noticia do Dia</h3>
+        </div>
+        <div class="dois">
+          <img src="../../../assets/img/olav-tvedt--oVaYMgBMbs-unsplash.jpg" style="width: 350px; height: 225;">
+          <h3>Automobilismo</h3>
+           
+        </div>
+      </div>
+    </swiper-slide> -->
+    <!-- <swiper-slide class="dark-theme">
+      <div class="zero">
+        <div class="um">
+          <img src="../../../assets/img/Jackson.png" style="width: 350px; height: 225px;">
+          <h3>Cultura</h3>
+        </div>
+        <div class="dois">
+            <img src="../../../assets/img/Jackson.png" style="width: 350px; height: 225px;">
+            <h3>Cultura</h3>
+        </div>
+      </div>
+    </swiper-slide> -->
+    <!-- <swiper-slide><img src="../../../assets/img/dca9ecd74ecefe6015a4a2c8f51a9b0f.jpg" alt=""></swiper-slide>
+    
+    <swiper-slide><img src="../../../assets/img/images.jpg" alt=""></swiper-slide> -->
+  <!-- </swiper-container> -->
+
+  <app-generos></app-generos>
+
+  
+  <!-- <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="searchNoticias()" placeholder="Pesquisar"></ion-searchbar> -->
+
+  
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  *ngFor=" let noticias of noticia" (click)="getNoticia(noticias.pk_id)">
+        <ion-card>
+          <ion-img src="https://g1a.com.br/jornal/{{noticias.imagem}}"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{noticias.titulo}}</ion-card-title>
+            <ion-card-subtitle>{{noticias.sub_titulo}}</ion-card-subtitle>
+          </ion-card-header>
+  
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </ion-content>
+  

@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-back-button slot="start" defaultHref="/home"></ion-back-button>
+    <ion-title>noticia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item *ngFor="let noticias of genero" (click)="getNoticias(noticias.pk_id)">
+    <ion-label>
+
+      <h2>{{ noticias.titulo }}</h2>
+      <p>{{ noticias.sub_titulo }}</p>
+      <!-- <p>{{ noticias.texto }}</p> -->
+      <ion-img src="https://g1a.com.br/jornal/{{noticias.imagem}}"></ion-img>
+      <!-- <link rel="stylesheet" href="../ler/">     -->
+    
+    </ion-label>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,113 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    height: 75vh; /* Faz com que o contêiner ocupe toda a altura da janela de visualização */
+    color: #ffffff;
+  }
+   
+  ion-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+   
+  h1 {
+    text-align: center;
+  }
+   
+  ion-content {
+    --background: #ffffff; /* Define o background preto */
+  }
+   
+  .dark-form {
+    background-color: #ffffff; /* Define o background do formulário como preto */
+  }
+   
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    height: 75vh; /* Faz com que o contêiner ocupe 75% da altura da janela de visualização */
+  }
+   
+  ion-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+   
+  h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+   
+  }
+   
+  .dark{
+    background-color: rgb(255, 255, 255);
+  }
+   
+  .edit{
+    color: rgb(0, 0, 0);
+  }
+   
+  .ddd{
+    ion-item,
+    ion-input {
+      background-color: rgb(255, 255, 255); /* Fundo preto para todos os componentes internos */
+      color: rgb(0, 0, 0); /* Texto branco para todos os componentes internos */
+    }
+    background-color: #ffffff;
+   
+  }
+   
+  .button2 ion-button {
+    --background: #c5000f;
+    --background-hover: #c5000f;
+    --background-activated: #c5000f;
+    --background-focused: #c5000f;
+   
+    --color: rgb(255, 255, 255);
+   
+   
+   
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+   
+    --ripple-color: deeppink;
+   
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+   
+  }
+   
+  .button1 ion-button {
+    --background: #0054e9;
+    --background-hover: #0054e9;
+    --background-activated: #0054e9;
+    --background-focused: #0054e9;
+   
+    --color: rgb(255, 255, 255);
+   
+   
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+   
+    --ripple-color: deeppink;
+   
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+   
+  }

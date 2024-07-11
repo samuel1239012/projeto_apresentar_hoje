@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" (click)="dismiss()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding">
+  <h1 class="edit">Edite Seus Dados</h1>
+ 
+  <form [formGroup]="formulario" enctype="multipart/form-data" class="dark-form">
+    <div class="profile-container">
+ 
+      <ion-list class="dark">
+        <ion-img src="../../../assets/img/homem-usuario.png"></ion-img>
+        <br>
+<!--
+        <ion-item>
+          <input type="file" placeholder="Imagem do Usuario">
+        </ion-item> -->
+        <div class="receba" class="ddd">
+        <ion-item>
+          <ion-input formControlName="nome" label="Nome" labelPlacement="floating" placeholder="Informe seu Nome"></ion-input>
+        </ion-item>
+ 
+        <ion-item>
+          <ion-input formControlName="email" label="E-Mail" labelPlacement="floating" placeholder="Informe seu e-mail"></ion-input>
+        </ion-item>
+ 
+        <ion-item>
+          <ion-input formControlName="senha" label="Senha" labelPlacement="floating" placeholder="Informe sua Senha" type="password"></ion-input>
+        </ion-item>
+ 
+        <ion-item>
+          <ion-input formControlName="whatsapp" label="Telefone" labelPlacement="floating" placeholder="Informe seu Telefone"></ion-input>
+        </ion-item>
+ 
+      </div>
+ 
+      </ion-list>
+    </div>
+   
+    <div class="button1">
+    <ion-button expand="block"  (click)="onSave()">Salvar Alteração</ion-button>
+  </div>
+  <div class="button2">
+    <ion-button expand="block"  (click)="onLogout()">Sair Da Conta</ion-button>
+  </div>
+  </form>
+ 
+ 
+ 
+</ion-content>

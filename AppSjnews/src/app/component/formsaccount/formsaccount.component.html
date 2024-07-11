@@ -1,0 +1,42 @@
+<div class="login-container">
+  <h2>Login</h2>
+
+  <form [formGroup]="formulario" (ngSubmit)="onRegister()">
+    <div class="input-group">
+      <label for="nome"><ion-icon name="lock-closed-outline"></ion-icon> Insira Seu Nome</label>
+      <input formControlName="nome" id="nome" type="text" name="nome" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email"><ion-icon name="mail-outline"></ion-icon> Email</label>
+      <input formControlName="email" type="email" id="email" name="email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password"><ion-icon name="lock-closed-outline"></ion-icon> Senha</label>
+      <input formControlName="senha" type="password" id="password" name="password" required>
+    </div>
+
+    <!-- <div class="input-group">
+      <label for="cpf"><ion-icon name="lock-closed-outline"></ion-icon> Insira Seu CPF</label>
+      <input formControlName="cpf" id="cpf" type="text" name="cpf" required>
+    </div> -->
+
+    <div class="input-group">
+      <label for="whatsapp"><ion-icon name="lock-closed-outline"></ion-icon> Insira Seu Telefone</label>
+      <input formControlName="whatsapp" id="whatsapp" type="text" name="whatsapp" required>
+    </div>
+
+    <div class="input-group">
+      <input type="checkbox" id="remember" name="remember">
+      <label for="remember">Concordo com a <a href="http://www.savewalterwhite.com/">política de privacidade</a></label>
+    </div>
+
+    <button type="submit">ENTRAR</button>
+  </form>
+
+  <!-- <div class="links">
+    <a href="#">Esqueceu a senha?</a>
+    <a href="/register">Criar Conta</a>
+  </div> -->
+</div>

@@ -1,0 +1,59 @@
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .menu-button {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button.active {
+    background-color: red;
+    color: white;
+  }
+  
+  .menu-button:not(.active):hover {
+    background-color: #cccccc;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  .menu-button {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    scroll-snap-align: start;
+  }
+  
+  .menu-button.active {
+    background-color: red;
+    color: white;
+  }
+  
+  .menu-button:not(.active):hover {
+    background-color: #cccccc;
+  }
+  
+  

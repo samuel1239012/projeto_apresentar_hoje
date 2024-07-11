@@ -1,0 +1,20 @@
+<app-back-button></app-back-button>
+
+<ion-content>
+ 
+  <div class="title-container">
+    <h2 class="title">{{titulo}}</h2>
+    <div class="icons-container">
+      <ion-icon *ngIf="pk_favorito > 1" id="favorito-icon" class="end-icon" name="bookmark" (click)="toggleFavorito(pk_id)"></ion-icon>
+      <ion-icon *ngIf="pk_favorito == null" id="favorito-icon" class="end-icon" name="bookmark-outline" (click)="toggleFavorito(pk_favorito)"></ion-icon>      
+    </div>
+  </div>
+  
+  <hr width="85%" color="black"/>
+  <p class="text">{{sub_titulo}}</p>
+  <ion-img src="https://g1a.com.br/jornal/{{img}}"></ion-img>
+  <p class="text">{{texto}}</p>
+
+</ion-content>
+
+ 

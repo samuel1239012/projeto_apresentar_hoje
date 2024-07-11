@@ -1,0 +1,56 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+ 
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+ 
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+ 
+#container a {
+  text-decoration: none;
+}
+ 
+/* Define a cor de seleção para as abas */
+ion-tab-bar {
+  --color-selected: #BF1515;
+  --background: #ffffff;  /* Define a cor preta para a barra de abas */
+  --ion-color-step-50: #000000;  /* Ajusta a cor de fundo */
+}
+ 
+/* Aplica a cor de seleção ao texto e ao ícone quando a aba está selecionada */
+ion-tab-button.ion-selected {
+  color: var(--color-selected) !important;
+}
+ 
+ion-tab-button.ion-selected ion-icon {
+  color: var(--color-selected) !important;
+}
+ 
+ion-tab-button.ion-selected ion-label {
+  color: var(--color-selected) !important;
+}
+ 
+/* Define a cor preta para os botões de aba */
+ion-tab-button {
+  --color: #000000;  /* Define a cor do texto e do ícone para branco */
+}
+ 
+.menu-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}

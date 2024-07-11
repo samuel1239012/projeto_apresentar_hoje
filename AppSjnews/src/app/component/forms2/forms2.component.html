@@ -1,0 +1,27 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form [formGroup]="formulario">
+      <div class="input-group">
+          <label for="email"><ion-icon name="mail-outline"></ion-icon> Email</label>
+          <input formControlName="email" type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+          <label for="password"><ion-icon name="lock-closed-outline"></ion-icon> Senha</label>
+          <input formControlName="password" type="password" id="password" name="password" required>
+          
+      </div>
+      
+      <div class="input-group">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Lembrar-se</label>
+      </div>
+            <app-google></app-google>
+
+      <button type="submit" (click)="onLogin()">ENTRAR</button>
+      
+  </form>
+  <div class="links">
+      <a href="#">Esqueceu a senha?</a>
+      <a href="/register">Criar Conta</a>
+  </div>
+</div>

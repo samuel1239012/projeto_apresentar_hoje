@@ -1,0 +1,33 @@
+.icons-container {
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+}
+
+.end-icon, .end-icon2 {
+  font-size: 1.8rem;
+  margin-left: 1rem; /* Space between the icons */
+  color: rgb(0, 0, 0)
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-family: FuturaBold;
+  color: #000000;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: FuturaBkBt;
+  color: #000000;
+}
+
+ion-content {
+  --background: #ffffff;
+  color: #FFFFFF; /* Define a cor do texto como branco para contraste */
+}
